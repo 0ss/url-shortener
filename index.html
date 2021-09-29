@@ -1,144 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
-  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-</head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-primary">
+      <ul>
+        <li><img src="./images/logo.svg" alt="logo" /></li>
+        <li><a href="#features">Features </a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <ul class="inner-ul">
+          <li><a href="login.html">Login</a></li>
+          <li ><a class="signup" href="signup.html">Sign Up</a></li>
+        </ul>
+      </ul>
+    </nav>
 
-<body>
-  <nav class="navbar navbar-expand-sm navbar-light bg-primary">
-    <ul>
-      <li><a href="index.html">Logo</a></li>
-      <li><a href="#features">Features </a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#resources">Resources</a></li>
-      <li><a href="login.html">Login</a></li>
-      <li><a href="signup.html">Sign Up</a></li>
-
-    </ul>
-  </nav>
-
-  <main>
-    <section>
-      <header>
-        <h1>
-          More than just shorter links
-        </h1>
-      </header>
-      <p>Build your brand’s recognition and get detailed insights
-        on how your links are performing.
-      </p>
-      <button>Get Started</button>
-      <img src="images/illustration-working.svg" alt="shortener">
-    </section>
-    <section>
-      <form action="#">
-        <input type="url" placeholder="Shorten a link here...">
-        <input type="submit" value="  Shorten It!">
-      </form>
-    </section>
-    <section id="features">
-      <header>
-        <h2>
-          Advanced Statistics
-        </h2>
-        <p>Track how your links are performing across the web with our
-          advanced statistics dashboard.
-        </p>
-      </header>
-      <article><img src="images/icon-brand-recognition.svg" alt="brand recognition">
-        <h3>Brand Recognition</h3>
-        <p>Boost your brand recognition with each click. Generic links don’t
-          mean a thing. Branded links help instil confidence in your content.
-        </p>
+    <main>
+      <section class="top-main">
+        <header>
+          <h1>More than just shorter links</h1>
+          <p>
+            Build your brand’s recognition and get detailed insights on how your
+            links are performing.
+          </p>
+          <button>Get Started</button>
+        </header>
+        <img src="images/illustration-working.svg" alt="shortener" />
+      </section>
+      <section>
+        <form action="#">
+          <input type="url" class="shorten-url" placeholder="Shorten a link here..." />
+          <input type="submit" class="shorten-button" value="  Shorten It!" />
+        </form>
+      </section>
+      <section id="features">
+        <header>
+          <h2>Advanced Statistics</h2>
+          <p>
+            Track how your links are performing across the web with our advanced
+            statistics dashboard.
+          </p>
+        </header>
+       <section class="articles">
+        <article class="first-article">
+          <img
+            src="images/icon-brand-recognition.svg"
+            alt="brand recognition"
+          />
+          <h3>Brand Recognition</h3>
+          <p>
+            Boost your brand recognition with each click. Generic links don’t
+            mean a thing. Branded links help instil confidence in your content.
+          </p>
+        </article>
+        <article class="second-article">
+          <img src="images/icon-detailed-records.svg" alt="Detailed Records" />
+          <h3>Detailed Records</h3>
+          <p>
+            Gain insights into who is clicking your links. Knowing when and
+            where people engage with your content helps inform better decisions.
+          </p>
+        </article>
+        <article class="third-article">
+          <img
+            src="images/icon-fully-customizable.svg"
+            alt="Fully Customizable"
+          />
+          <h3>Fully Customizable</h3>
+          <p>
+            Improve brand awareness and content discoverability through
+            customizable links, supercharging audience engagement.
+          </p>
+        </article>
+       </section>
+      </section>
+      <section id="pricing" style="background-image: url('./images/bg-shorten-desktop.svg');">
+        <header>
+          <h2>Boost your links today</h2>
+        </header>
+        <a href="getstarted.html">Get Started</a>
+      </section>
+    </main>
+    <footer id="resources">
+      <a href="index.html"><img src="images/logo.svg" alt="Shortener" /></a>
+      <article>
+        <h4>Features</h4>
+        <a href="#">Link Shortening </a><a href="#">Branded Links </a
+        ><a href="#">Analytics</a>
       </article>
-      <article><img src="images/icon-detailed-records.svg" alt="Detailed Records">
-        <h3>Detailed Records</h3>
-        <p>
-          Gain insights into who is clicking your links. Knowing when and where
-          people engage with your content helps inform better decisions.
-        </p>
+      <article>
+        <h4>Resources</h4>
+        <a href="#">Blog </a>
+        <a href="#">Developers</a>
+        <a href="#">Support</a>
       </article>
-      <article><img src="images/icon-fully-customizable.svg" alt="Fully Customizable">
-        <h3>Fully Customizable</h3>
-        <p>Improve brand awareness and content discoverability through customizable
-          links, supercharging audience engagement.
-        </p>
+      <article>
+        <h4>Company</h4>
+        <a href="#"> About</a><a href="#"> Our Team</a>
+        <a href="#"> Careers</a>
+        <a href="#"> Contact</a>
       </article>
-    </section>
-    <section id="pricing">
-      <header>
-        <h2>Boost your links today</h2>
-      </header>
-      <a href="getstarted.html">Get Started</a>
-    </section>
-  </main>
-  <footer id="resources">
-    <a href="index.html"><img src="images/logo.svg" alt="Shortener"></a>
-    <article>
-      <h4>Features</h4>
-      <a href="#">Link Shortening
+      <article class="icons">
+        <a href="https://facebook.com">
+          <!--            remove the hardcoded style-->
+          <img
+            src="images/icon-facebook.svg"
+            style="background-color: #00f"
+            alt="https://facebook.com"
+          />
+        </a>
+        <a href="https://twitter.com">
+          <img
+            src="images/icon-twitter.svg"
+            style="background-color: #00f"
+            alt="https://twitter.com"
+          />
+        </a>
+        <a href="https://pinterest.com">
+          <img
+            src="images/icon-pinterest.svg"
+            style="background-color: #00f"
+            alt="https://pinterest.com"
+          />
+        </a>
+        <a href="https://instagram.com">
+          <img
+            src="images/icon-instagram.svg"
+            style="background-color: #00f"
+            alt="https://instagram.com"
+          />
+        </a>
+      </article>
+    </footer>
 
-      </a><a href="#">Branded Links
-      </a><a href="#">Analytics</a>
-    </article>
-    <article>
-      <h4>Resources</h4>
-      <a href="#">Blog
-      </a>
-      <a href="#">Developers</a>
-      <a href="#">Support</a>
-    </article>
-    <article>
-      <h4>Company
-      </h4>
-      <a href="#">
-        About</a><a href="#">
-        Our Team</a>
-      <a href="#">
-        Careers</a>
-      <a href="#">
-        Contact</a>
-    </article>
-    <article>
-      <a href="https://facebook.com">
-        <!--            remove the hardcoded style-->
-        <img src="images/icon-facebook.svg" style="background-color: #00f;" alt="https://facebook.com">
-      </a>
-      <a href="https://twitter.com">
-        <img src="images/icon-twitter.svg" style="background-color: #00f;" alt="https://twitter.com">
-      </a>
-      <a href="https://pinterest.com">
-        <img src="images/icon-pinterest.svg" style="background-color: #00f;" alt="https://pinterest.com">
-      </a>
-      <a href="https://instagram.com">
-        <img src="images/icon-instagram.svg" style="background-color: #00f;" alt="https://instagram.com">
-      </a>
-    </article>
-  </footer>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
